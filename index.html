@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon/cambry-favicon.png" type="image/x-icon">
+    <title>Cambry</title>
+    
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/37420c2a89.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    
+    <!-- css font -->
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/homepage_jarif.css">
+    <link rel="stylesheet" href="styles/homepage_colab_scroll.css">
+    <link rel="stylesheet" href="styles/study_destination.css">
+    <!-- css font -->
+
+    <!-- testimonial -->
+    <link rel="stylesheet" href="./styles/testimonial.css">
+  </head>
+
+  <body>
+    <header id="main-header" class="fixed top-0 left-0 w-full z-[100]"></header>
+  
+    <main>
+      
+
+      <section id="hero-section" class="sm:h-svh py-20 bg-[url(./assets/hero/hero-banner-img-6.jpg)] bg-cover bg-fit bg-fixed bg-center bg-no-repeat flex justify-center items-center">
+      <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
+        <h1 class="sm:text-4xl text-3xl font-black text-center text-white uppercase">
+          Experience World-Class Education at Affordable Costs: Study in Malaysia
+        </h1>
+        <p class="text-center sm:text-md text-sm text-black my-4">
+          Discover a thriving academic environment and vibrant culture in the heart of Southeast Asia.
+        </p>
+        <div id="hero-buttons-container" class="flex sm:flex-row flex-col-reverse justify-center gap-4">
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a id="openModalBtn"><i class="fa-solid fa-calendar-check"></i> Book an appointment</a>
+          </button>
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a href="study-destination-mainpage.html"><i class="fa-solid fa-earth-americas"></i> Explore destinations</a>
+          </button>
+        </div>
+      </div>
+      </section>
+
+      <section class="text-center mx-4 sm:mx-8 md:mx-16 lg:mx-28 my-16 sm:my-24 px-6 sm:px-14 py-8 sm:py-11 rounded-sm text-[#D9D9D9] bg-violet-700">
+        <h2 class="heebo text-2xl sm:text-[32px] font-semibold text-[#ffe521] mb-2">Our Mission</h2>
+        <p class="nunito-sans text-base sm:text-lg font-medium mt-3">
+          At Cambry, we are passionate about empowering students to achieve their academic aspirations abroad. With a deep
+          understanding of global education systems, we provide tailored support, ensuring a smooth transition to your
+          dream university. From choosing the right course to securing your visa, we are with you every step of the way.
+        </p>
+      </section>
+
+      <section class="mx-4 sm:mx-8  md:mx-16 lg:mx-28 my-16 sm:my-24">
+        <h2 class="text-violet-700 text-2xl sm:text-[32px] font-semibold heebo text-center">What We Offer</h2>
+        <p class="text-center text-[#00000080] text-base sm:text-lg italic font-normal mt-2">We handle the details so you
+          can focus on your dreams</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 sm:gap-11 my-10 sm:my-16">
+          <div
+            class="flex hover:shadow-sm shadow-[#ffe521] flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D]   transition duration-300">
+            <img src="assets/consultancy.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Consultancy icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">Study Abroad Consultancy</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Expert guidance to find your perfect program and secure
+              admission.</p>
+          </div>
+
+          <div
+            class="flex flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D] hover:shadow-sm shadow-violet-700 transition duration-300">
+            <img src="assets/universityt.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="University icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">University Selection</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Expert advice to help you choose the best-fit university and
+              course.</p>
+          </div>
+          <div
+            class="flex flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D]  hover:shadow-sm shadow-[#ffe521] transition duration-300">
+            <img src="assets/application.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Application icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">Application Assistance</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Guidance on preparing and submitting strong applications.</p>
+          </div>
+          <div
+            class="flex flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D] hover:shadow-sm shadow-violet-700  transition duration-300">
+            <img src="assets/visa.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Visa icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">Visa Processing</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Hassle-free assistance with visa documentation and
+              application.</p>
+          </div>
+          <div
+            class="flex flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D] hover:shadow-sm shadow-[#ffe521] transition duration-300">
+            <img src="assets/guidence.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Pre-Departure icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">Pre-Departure Guidance</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Everything you need to prepare for life abroad, including
+              accommodation, travel, and more.</p>
+          </div>
+          <div
+            class="flex flex-col gap-3 p-6 rounded-sm items-center text-center justify-center border-[1px] border-[#4C3C934D] hover:shadow-sm shadow-violet-700 transition duration-300">
+            <img src="assets/advice.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Scholarship icon">
+            <h2 class="text-xl font-semibold text-violet-700 heebo">Scholarship Advice</h2>
+            <p class="nunito-sans text-[#000000B2] text-sm">Explore opportunities to fund your education. Stay up to date
+              with the scholarship requirements.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- find destination -> fidbi -->
+      <section id="destinations-section" class="w-11/12 mx-auto sm:my-20 my-10">
+        <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+          Find Your Destination
+        </h2>
+        <p class="text-center sm:text-base text-sm text-gray-500">
+          From world-class universities to stunning travel destinations, discover where we can take you.
+        </p>
+        <!-- DESTINATIONS CARDS CONTAINER -->
+        <div id="destinations-cards-container" class="mt-10 grid sm:grid-cols-4 sm:gap-8 grid-cols-2 gap-2">
+          <!-- Sweden -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <!-- Normal card -->
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/sweden.jpg" alt="sweden">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">Sweden</h3>
+                <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
+              </div>
+            </div>
+
+            <!-- Hover card (animatable) -->
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">Sweden</h3>
+                <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="sweden.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Australia -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/australia.jpg" alt="australia">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">Australia</h3>
+                <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="australia-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">Australia</h3>
+                <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="australia-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="australia.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- New Zealand -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/newzealand.jpg" alt="new zealand">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">New Zealand</h3>
+                <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="newzealand-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">New Zealand</h3>
+                <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="newzealand-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="newZealand.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- United Kingdom -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/uk.jpg" alt="united kingdom">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">United Kingdom</h3>
+                <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="uk-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">United Kingdom</h3>
+                <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="uk-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="unitedKingdom.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Malaysia -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/malaysia.jpg" alt="malaysia">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">Malaysia</h3>
+                <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="malaysia-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">Malaysia</h3>
+                <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="malaysia-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="malaysia.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Canada -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/canada.jpg" alt="canada">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">Canada</h3>
+                <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="canada-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">Canada</h3>
+                <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="canada-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="canada.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Canada -->
+          <div class="card-wrapper relative sm:w-60 sm:h-70 h-55 overflow-hidden rounded-sm" tabindex="0">
+            <div class="card-single absolute inset-0 transition-all duration-300 opacity-100 scale-100 z-10 will-change-transform will-change-opacity">
+              <img class="w-full h-full object-cover object-top" src="./assets/canada.jpg" alt="canada">
+              <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+                <h3 class="font-bold text-white sm:text-base text-xs">United States</h3>
+                <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-03-512.png" alt="usa-flag">
+              </div>
+            </div>
+
+            <div class="card-single-hover absolute inset-0 p-4 bg-white shadow-sm border rounded-sm transition-all duration-300 opacity-0 scale-95 pointer-events-none z-20">
+              <div class="flex items-center gap-2 mb-5">
+                <h3 class="text-xl font-semibold">United States</h3>
+                <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-03-512.png" alt="canada-flag">
+              </div>
+              <p class="text-xs sm:text-justify mb-5">
+                Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+              </p>
+              <a href="unitedStates.html" target="_blank" class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white py-2 px-3 rounded-sm text-center">
+                Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="other-destinations" class="w-11/12 mx-auto sm:my-20 my-10">
+        <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+          We Also Work In
+        </h2>
+        <p class="text-center sm:text-base text-sm text-gray-500">
+          Just tell us your dream destination, we have got you covered!
+        </p>
+
+        <div id="other-destinations-flags" class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-4 items-center mt-10">
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-90-512.png" alt="Antigua flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">
+              Antigua
+            </figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/flag-all-country-2/64/57-512.png" alt="Austria flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">
+              Austria
+            </figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/28_Ensign_Flag_Nation_Belgium-128.png" alt="Belgium flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">
+              Belgium
+            </figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-02-512.png" alt="China flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">
+              China
+            </figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-63-128.png" alt="Cyprus flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Cyprus</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/73_Ensign_Flag_Nation_denmark-128.png" alt="Denmark flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Denmark</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/world-flags-6/900/uae_united_arab_emirates_national_country_flag-512.png" alt="United Arab Emirates flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">UAE</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-20-128.png" alt="Finland flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Finland</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/92_Ensign_Flag_Nation_france-128.png" alt="France flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">France</figcaption>
+          </figure>
+
+          <!-- row 2 -->
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-47-128.png" alt="Georgia flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Georgia</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/world-flags-6/900/germany_german_national_country_flag-128.png" alt="Germany flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Germany</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_hungary-128.png" alt="Hungary flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Hungary</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/121_Ensign_Flag_Nation_ireland-128.png" alt="Ireland flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Ireland</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/124_Ensign_Flag_Nation_italy-128.png" alt="Italy flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Italy</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-05-128.png" alt="Japan flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Japan</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_lithuania-128.png" alt="Lithuania flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Lithuania</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/Flag-29-512.png" alt="Malta flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Malta</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-100-128.png" alt="Mauritius flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Mauritius</figcaption>
+          </figure>
+
+          <!-- row 3 -->
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-99-128.png" alt="Monaco flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Monaco</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-128.png" alt="Netherlands flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Netherlands</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/poland-128.png" alt="Poland flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Poland</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/210_Ensign_Flag_Nation_russia-512.png" alt="Russia flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Russia</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-19-128.png" alt="Singapore flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Singapore</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/south_korea-128.png" alt="South Korea flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">South Korea</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/spain-128.png" alt="Spain flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Spain</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/248_Ensign_Flag_Nation_switzerland-128.png" alt="Switzerland flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Switzerland</figcaption>
+          </figure>
+
+          <figure class="flag-item flex flex-col items-center text-center p-2 rounded-sm transition transform hover:scale-101 hover:shadow-sm">
+            <img loading="lazy" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/280_Ensign_Flag_Nation_vietnam-128.png" alt="Vietnam flag" class="w-16 h-11 object-contain rounded-sm">
+            <figcaption class="mt-2 text-xs sm:text-sm text-gray-700">Vietnam</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- why choose us -> fidbi -->
+      <section id="why-choose-us" class="w-11/12 mx-auto sm:my-20 my-10">
+        <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+          WHY CHOOSE US
+        </h2>
+        <p class="text-center sm:text-base text-sm text-gray-500">
+          Join the thousands of clients we've already helped succeed!
+        </p>
+        <div id="points-and-rates-container" class="mt-10">
+          <div id="points-container" class="grid sm:grid-cols-4 grid-cols-2 gap-2">
+            <div id="single-point-box"
+              class="flex flex-col items-center justify-center shadow-sm hover:shadow-md sm:p-4 p-3 rounded-sm">
+              <i class="fa-classic fa-solid fa-thumbs-up sm:text-5xl text-3xl text-violet-700 mb-2"></i>
+              <h3 class="sm:text-xl text-md font-semibold text-violet-700 text-center">
+                Proven Expertise
+              </h3>
+              <p class="text-center font-thin tracking-wider text-sm">Decades of success in study abroad consultancy.</p>
+            </div>
+            <div id="single-point-box"
+              class="flex flex-col items-center justify-center shadow-sm hover:shadow-md sm:p-4 p-3 rounded-sm">
+              <i class="fa-solid fa-scroll sm:text-5xl text-3xl text-violet-700 mb-2"></i>
+              <h3 class="sm:text-xl text-md font-semibold text-violet-700 text-center">Personalized Plans</h3>
+              <p class="text-center font-thin tracking-wider text-sm">Tailored solutions for every client’s unique needs.
+              </p>
+            </div>
+            <div id="single-point-box"
+              class="flex flex-col items-center justify-center shadow-sm hover:shadow-md sm:p-4 p-3 rounded-sm">
+              <i class="fa-solid fa-headset sm:text-5xl text-3xl text-violet-700 mb-2"></i>
+              <h3 class="sm:text-xl text-md font-semibold text-violet-700 text-center">
+                Comprehensive Support
+              </h3>
+              <p class="text-center font-thin tracking-wider text-sm">From planning to execution, we are with you every
+                step of the way.</p>
+            </div>
+            <div id="single-point-box"
+              class="flex flex-col items-center justify-center shadow-sm hover:shadow-md sm:p-4 p-3 rounded-sm">
+              <i class="fa-solid fa-square-poll-vertical sm:text-5xl text-3xl text-violet-700 mb-2"></i>
+              <h3 class="sm:text-xl text-md font-semibold text-violet-700 text-center">Trusted Results</h3>
+              <p class="text-center font-thin tracking-wider text-sm">95%+ client satisfaction and glowing testimonials.
+              </p>
+            </div>
+          </div>
+          <div id="rates-container" class="bg-violet-700 p-4 rounded-sm mt-5 grid grid-cols-3 gap-4">
+            <div id="rate-single" class="text-center shadow-sm sm:p-4 p-2">
+              <h3 class="sm:text-5xl text-xl font-black text-white">500+</h3>
+              <p class="text-white sm:tracking-wider sm:text-md text-[8px] text-center uppercase">
+                Global Partner Institutions
+              </p>
+            </div>
+            <div id="rate-single" class="text-center shadow-sm sm:p-4 p-2">
+              <h3 class="sm:text-5xl text-xl font-black text-white">1000+</h3>
+              <p class="text-white sm:tracking-wider sm:text-md text-[8px] text-center uppercase">
+                Students Worldwide
+              </p>
+            </div>
+            <div id="rate-single" class="text-center shadow-sm sm:p-4 p-2">
+              <h3 class="sm:text-5xl text-xl font-black text-white">99.99%</h3>
+              <p class="text-white sm:tracking-wider sm:text-md text-[8px] text-center uppercase">
+                Student Success Rate
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how it works -> jarif -->
+      <section class="w-11/12 mx-auto sm:my-20 my-10">
+        <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+          How It Works
+        </h2>
+        <p class="text-center sm:text-base text-sm text-gray-500">
+          We handle every process in an organized way.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-5 mt-10">
+          <!-- Step 1 -->
+          <div class="card bg-gradient-to-b from-primary/20 to-primary/5 shadow-sm shadow-violet-700/30 hover:shadow-md rounded-sm hover:shadow-blue-300/30">
+            <div class="card-body items-center text-center">
+              <h3 class="text-4xl font_3 font-extrabold text-primary mb-4">
+                1
+              </h3>
+              <img src="./assets/how it works/step1.png" alt="Consultation" class="w-40" />
+              <h3 class="text-xl font_1 font-bold mb-2 text-primary">
+                Consultation
+              </h3>
+              <p class="text-base-content/80 font_2">
+                Share your goals, and we’ll craft a personalized plan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="card bg-gradient-to-b from-primary/20 to-primary/5 shadow-sm shadow-violet-700/30 hover:shadow-md rounded-sm  hover:shadow-pink-300/30">
+            <div class="card-body items-center text-center">
+              <h3 class="text-4xl font_3 font-extrabold text-secondary mb-4">
+                2
+              </h3>
+              <img src="./assets/how it works/step2.jpg" alt="Planning" class="w-40" />
+              <h3 class="text-xl font_1 font-bold mb-2 text-secondary">
+                Planning
+              </h3>
+              <p class="text-base-content/80 font_2">
+                We handle everything from applications to travel logistics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="card bg-gradient-to-b from-primary/20 to-primary/5 shadow-sm shadow-violet-700/30 hover:shadow-md rounded-sm  hover:shadow-green-300/30">
+            <div class="card-body items-center text-center">
+              <h3 class="text-4xl font_3 font-extrabold text-accent mb-4">
+                3
+              </h3>
+              <img src="./assets/how it works/step3.jpg" alt="Execution" class="w-40" />
+              <h3 class="text-xl font_1 font-bold mb-2 text-accent">
+                Execution
+              </h3>
+              <p class="text-base-content/80 font_2">
+                Embark on your journey with confidence and ease.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- our partners -->
+      <section class="w-11/12 mx-auto sm:my-20 my-10">
+        <div class="container mx-auto px-4">
+          <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+            We Collaborate With
+          </h2>
+
+          <div class="marquee-container w-full py-6">
+            <div class="marquee-content animate-scroll">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/British_Council_logo.svg/2560px-British_Council_logo.svg.png" alt="British Council" class="logo-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/IELTS_logo.svg" alt="IELTS" class="logo-item">
+              <img src="https://multiples-general.lon1.cdn.digitaloceanspaces.com/public-comps/ASX_IEL.png" alt="IDP" class="logo-item">
+              <img src="https://dynamiclangues.com/wp-content/uploads/2021/09/Logo-Cambridge-Linguaskill-JPG-1.jpg" alt="Linguaskill" class="logo-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2TaeNyCTJVjAfH3IeOk6ECcGAGVumQKA2w&s" alt="duolingo" class="logo-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6NTQoNKpfbbSgsKZlPxspyxAPnX_egOBsQ&s" alt="ellt" class="logo-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/TOEFL_Logo.svg/2560px-TOEFL_Logo.svg.png" alt="toefl" class="logo-item">
+              <img src="https://marathoninternational.co.in/assets/img/pteTraining.png" alt="pte" class="logo-item">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- what our students say -> jarif -->
+      <section id="comments" class="w-11/12 mx-auto sm:my-20 my-10">
+        <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center mb-2">
+          What Our Students Say
+        </h2>
+        <p class="text-center sm:text-base text-sm text-gray-500">
+          Hear from the people already received our assistance and achieved their dream successfully.
+        </p>
+
+        <!-- up button -->
+        <div class="mt-10">
+          <div class="relative max-w-6xl mx-auto">
+            <button class="up_btn absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+              </svg>
+            </button>
+
+            <!-- Carousel Wrapper -->
+            <div class="carousel_wrapper relative h-[340px] overflow-hidden">
+              <!-- Page 1 -->
+              <div class="carousel_page carousel_content_1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+                  <!-- Card 1 -->
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment font_2 text-gray-700 mb-10">
+                      My experience at Universiti Malaya was exceptional.
+                      Malaysia’s mix of cultural diversity and academic rigor
+                      gave me the perfect environment to grow both personally
+                      and professionally.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/ayesha_rahman.webp" class="w-12 h-12 rounded-full mr-4" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">
+                          Ayesha Rahman
+                        </h4>
+                        <span class="text-yellow-500 text-sm font-medium">Universities in Malaysia</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment font_2 text-gray-700 mb-8">
+                      Studying at the University of California, Berkeley was a
+                      dream come true. The exposure to global opportunities and
+                      the academic excellence here prepared me for a dynamic
+                      career ahead.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">
+                          Shahid Ahmed
+                        </h4>
+                        <span class="text-yellow-500 text-sm font-medium">University of California</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 2 -->
+              <div class="carousel_page carousel_content_2 hidden">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+                  <!-- Duplicate or new cards here -->
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment font_2 text-gray-700 mb-8">
+                      Sweden’s focus on innovation and sustainability at KTH
+                      Royal Institute of Technology helped me gain cutting-edge
+                      knowledge in engineering. It’s been a life-changing
+                      journey.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Arun Kumar</h4>
+                        <span class="text-yellow-500 text-sm font-medium">KTH Royal Institute of Technology</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment text-gray-700 mb-8">
+                      The University of Auckland provided not only world-class
+                      education but also a supportive environment. The serene
+                      landscapes of New Zealand made the experience even more
+                      memorable.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/user-1.png" class="w-12 h-12 rounded-full mr-4" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Maria S.</h4>
+                        <span class="text-yellow-500 text-sm font-medium">University of Auckland</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Page 3 -->
+              <div class="carousel_page carousel_content_3 hidden">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+                  <!-- Duplicate or new cards here -->
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment font_2 text-gray-700 mb-8">
+                      At the University of Melbourne, I gained more than a
+                      degree—I gained confidence, lifelong friendships, and
+                      career prospects. Australia truly exceeded my expectations
+                      grow both personally and professionally.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/user-3.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Jaquline N.</h4>
+                        <span class="text-yellow-500 text-sm font-medium">University of Melbourne</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-6 bg-white rounded-sm shadow-sm border-b-4 border-violet-300">
+                    <p class="user_comment text-gray-700 mb-8">
+                      The University of Toronto not only shaped my career but
+                      also gave me a second home. Canada’s welcoming atmosphere
+                      and top-notch education system made all the difference and
+                      made the experience even more memorable.
+                    </p>
+                    <div class="flex items-center">
+                      <img src="./assets/user-4.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">James Bond</h4>
+                        <span class="text-yellow-500 text-sm font-medium">University of Toronto</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- down button -->
+            <button
+              class="down_btn absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- test -->
+      <section id="cta-final" class="w-11/12 mx-auto my-10 sm:my-20">
+        <div class="h-min relative overflow-hidden rounded-sm shadow-sm bg-gray-900/30" style="background-image: url('./assets/home/homepage-final-cta-5.jpg'); background-size: cover; background-position: top;">
+          
+          <!-- Gradient overlay -->
+          <div class="absolute inset-0 bg-black/60 md:bg-black/50"></div>
+
+          <!-- Content -->
+          <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-10">
+            
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white uppercase leading-tight">
+              Your Study Abroad Dream Awaits
+            </h2>
+
+            <p class="mt-4 text-white/90 text-sm sm:text-lg max-w-xl">
+              Get personalized guidance and expert support to choose the right university, prepare documents, and secure your visa.
+            </p>
+
+            <!-- Primary CTA Button -->
+            <a id="openModalBtn" href="" class="mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-md bg-violet-600 hover:bg-yellow-400  text-white font-semibold shadow-md transition focus:outline-none focus:ring-4 
+                    focus:ring-violet-300">
+              Book a Free Consultation
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <!-- Secondary Link -->
+            <a href="./student-services.html" target="_blank" class="mt-3 text-white/80 text-sm underline hover:text-white transition">
+              Learn more about our services
+            </a>
+
+            <!-- Trust badges (optional but recommended) -->
+            <div class="mt-6 flex items-center justify-center gap-6 text-white/70 flex-wrap">
+              <div class="flex items-center gap-2 text-xs sm:text-sm">
+                <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                1000+ students assisted
+              </div>
+
+              <div class="flex items-center gap-2 text-xs sm:text-sm">
+                <svg class="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 12.91 4 9.27l5.91-.99L12 2z"/></svg>
+                Trusted counselors
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- test -->
+    </main>
+
+    <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
+      <!-- added from footer.js -->
+    </footer>
+    
+
+    <div id="appointmentModal"
+      class="hidden fixed inset-0 bg-black/50  items-center justify-center p-4 z-500 opacity-0 transition-opacity duration-300 ease-out">
+      <div id="modalPanel"
+        class="bg-white/10 backdrop-blur-lg rounded-lg shadow-2xl w-full max-w-lg p-6  opacity-0 scale-95 transition-all duration-300 ease-out">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-3xl font-bold text-white">Send <span class="text-[#FFD700]">Us</span> A Message</h3>
+          <button id="closeModalBtn"
+            class="text-white hover:text-gray-300 text-2xl font-semibold bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center">
+            &times;
+          </button>
+        </div>
+
+        <form action="https://formspree.io/f/xdkpelzo" method="POST">
+
+          <div class="mb-4">
+            <input type="text" id="name" name="name" placeholder="Name" class="w-full bg-white px-5 py-3 border-none rounded-lg text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <input type="email" id="email" name="email" placeholder="Email" class="w-full bg-white px-5 py-3 border-none rounded-lg text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+                required>
+            </div>
+            <div>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="w-full bg-white px-5 py-3 border-none rounded-lg text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+                required>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full bg-white px-5 py-3 border-none rounded-lg text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+          </div>
+
+          <div class="mb-6">
+            <textarea id="message" name="message" rows="3" placeholder="Your Message" class="w-full bg-white px-5 py-3 border-none rounded-lg text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="w-full bg-[#FFD700] text-gray-900 text-lg font-semibold px-6 py-3 rounded-lg 
+                                    hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-md">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- started modals -->
+    <div id="contactModal" class="hidden fixed inset-0 bg-black/60  items-center justify-center p-4 z-500 
+                opacity-0 transition-opacity duration-300 ease-out">
+
+      <div id="contactModalPanel" class="bg-white/10 backdrop-blur-lg rounded-lg shadow-2xl w-full max-w-lg p-5 
+                    opacity-0 scale-95 transition-all duration-300 ease-out relative">
+
+        <button id="closeContactModalBtn"
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-semibold">&times;</button>
+
+        <h3 class="text-3xl font-bold text-center mb-5 text-yellow-400">Send Us A Message</h3>
+
+        <form action="https://formspree.io/f/xdkpelzo" method="POST">
+
+          <div class="mb-2">
+            <input type="text" id="contactName" name="name" placeholder="Name" class="w-full px-5 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 bg-white/80 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+          </div>
+
+          <div class="mb-2">
+            <input type="email" id="contactEmail" name="email" placeholder="Email" class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+          </div>
+
+          <div class="grid grid-cols-4 gap-3 mb-2">
+            <div class="col-span-1">
+              <input type="text" value="+880" readonly
+                class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg bg-gray-100 text-gray-700 focus:outline-none">
+            </div>
+            <div class="col-span-3">
+              <input type="tel" id="contactPhone" name="phone" placeholder="Contact Number" class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+                required>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <select id="contactDestination" name="destination" class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg text-gray-900 
+                                    focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+              <option value="" disabled selected>Preferred Study Destination</option>
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="uk">UK</option>
+              <option value="australia">Australia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="mb-2">
+            <select id="contactLevel" name="level" class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg text-gray-900 
+                                    focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+              <option value="" disabled selected>Preferred Study Level</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="postgraduate">Postgraduate</option>
+              <option value="diploma">Diploma</option>
+              <option value="foundation">Foundation</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <select id="contactYear" name="year" class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-lg text-gray-900 
+                                    focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300"
+              required>
+              <option value="" disabled selected>Preferred Study Year</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="later">Later</option>
+            </select>
+          </div>
+
+          <div class="mb-5 flex items-start">
+            <input type="checkbox" id="contactAgreement" name="agreement"
+              class="mt-1 mr-3 h-5 w-5 text-violet-600 rounded focus:ring-violet-500 border-gray-300" required>
+            <label for="contactAgreement" class="text-white text-sm">
+              By clicking you agree to our
+              <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a> and
+              <a href="#" class="text-orange-500 hover:underline">Terms & Conditions</a> *
+            </label>
+          </div>
+
+          <div>
+            <button type="submit" class="w-full bg-yellow-400 text-white text-lg font-semibold px-6 py-3 rounded-lg 
+                                    hover:bg-yellow-600 transition-all duration-300 shadow-md">
+              Get Started For Free
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="scripts/started_modals.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="scripts/appointment_booking_modal.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/testimonial.js"></script>
+
+  </body>
+</html>

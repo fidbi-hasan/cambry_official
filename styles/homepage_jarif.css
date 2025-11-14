@@ -1,0 +1,81 @@
+.font_1 {
+  font-family: "Heebo", sans-serif;
+}
+.font_2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+.font_3 {
+  font-family: "Calistoga", serif;
+}
+
+.comment_heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.user_comment {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact_form_heading {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button_form {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer_img {
+  background-image: url("./assets/footer_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text_group {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.explore {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.explore_component {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel_page {
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.carousel_page.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}

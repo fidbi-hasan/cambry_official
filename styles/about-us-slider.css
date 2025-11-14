@@ -1,0 +1,62 @@
+ .timeline-area {
+     position: relative;
+     padding: 3rem 0;
+     overflow: hidden;
+     /* Important to hide the cards when they slide off screen */
+ }
+
+
+
+ /* 3. Carousel Track Styling */
+ .carousel-track {
+     display: flex;
+     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     /* Smooth cubic transition */
+     padding-left: 2rem;
+     /* Offset for the timeline line and padding */
+ }
+
+ /* 4. Card Styling */
+ .card {
+     width: 500px;
+     /* Fixed card width */
+     height: 350px;
+     /* Fixed card height */
+     flex-shrink: 0;
+     margin-right: 32px;
+     /* 2rem space between cards */
+     border-radius: 1rem;
+     /* Rounded corners */
+     overflow: hidden;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+     position: relative;
+     transform: scale(0.85);
+     /* Initial side card scale */
+     opacity: 0.7;
+     /* Initial side card opacity */
+     transition: transform 0.5s, opacity 0.5s;
+ }
+
+ /* 5. Active Card Text Overlay */
+ .flag-overlay {
+     background-color: rgba(0, 0, 0, 0.4);
+     backdrop-filter: blur(20px);
+ }
+
+ /* 6. Responsive Adjustments */
+ @media (max-width: 768px) {
+     .card {
+         width: 250px;
+         height: 300px;
+         margin-right: 24px;
+         /* 1.5rem space */
+     }
+
+     /* Adjust centering offset for smaller screens in JS */
+ }
+
+ .blurry{
+    background-color: white;
+    opacity: 0.3;
+    backdrop-filter: blur(20px);
+ }

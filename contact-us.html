@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambry - Visa Processing Agency</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2c1bb72d8.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-white">
+    <div id="top"></div>
+    <header id="main-header" class="fixed top-0 left-0 w-full z-[100]"></header>
+      
+    <main>
+      <section id="hero-section" class="sm:h-svh py-20 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center flex justify-center items-center">
+        <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
+          <h1 class="sm:text-4xl text-3xl font-black text-center text-white uppercase">
+            We’re Here to Help You Every Step of the Way!
+          </h1>
+          <p class="text-center sm:text-md font-medium text-sm text-black my-4">
+            Have questions? Need guidance? Reach out to us today, and let’s start your journey toward studying abroad.
+          </p>
+          <div id="hero-buttons-container" class="flex sm:flex-row flex-col-reverse justify-center gap-4">
+            <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 hover:text-violet-900 backdrop-blur-sm border-none shadow-none text-white">
+              <a id="openModalBtn"><i class="fa-solid fa-calendar-check"></i> Book an appointment</a>
+            </button>
+            <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 hover:text-violet-900 backdrop-blur-sm border-none shadow-none text-white">
+              <a href="study-destination-mainpage.html"><i class="fa-solid fa-earth-americas"></i> Explore destinations</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="w-11/12 mx-auto my-20">
+        <h1 class="sm:text-3xl text-2xl font-bold uppercase text-center mb-10 text-violet-700">
+         Contact US!
+        </h1>
+        <div class="w-full flex sm:flex-row flex-col justify-between bg-violet-700 rounded-sm my-5 sm:p-10 p-5 text-white shadow-sm">
+          <div>
+            <h2 class="sm:text-3xl text-2xl font-bold mb-8">Reach Us Directly</h2>
+            <ul class="space-y-5 sm:text-base text-sm">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                <span>+880 1759-587632</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@cambry.com</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-address-book"></i>
+                <span>4th Floor, 52/1, H. M. Plaza, Dhaka 1205</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-clock"></i>
+                <span>Saturday - Thursday: 10:00 AM to 06:00 PM</span>
+              </li>
+            </ul>
+            <div class="flex space-x-3 mt-4 sm:text-3xl text-xl">
+                <a href="#" class="text-white hover:text-[#FFD200] transition-colors">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="text-white hover:text-[#FFD200] transition-colors">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-[#FFD200] transition-colors">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-white hover:text-[#FFD200] transition-colors">
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+            </div>
+          </div>
+
+          <div class="sm:mt-0 mt-5">
+              <h2 class="sm:text-3xl text-2xl font-bold mb-8">
+                Or Send Us A Message
+              </h2>
+              <form action="#" method="POST" class="space-y-4">
+                  <input type="text" name="name" class="w-full p-3 rounded-sm bg-white border-none text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FFD200]" placeholder="Name">
+                  <div class="flex flex-row gap-2">
+                      <input type="email" name="email" class="w-full p-3 rounded-sm bg-white border-none text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FFD200]" placeholder="Email">
+                  <input type="text" name="subject" class="w-full p-3 rounded-sm bg-white border-none text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FFD200]" placeholder="Subject">
+                  </div>
+                  <textarea name="message" rows="2" class="w-full p-3 rounded-sm bg-white border-none text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FFD200]" placeholder="Your Message"></textarea>
+                  <button type="submit" class="w-full bg-[#FFD200] text-black font-semibold px-8 py-3 rounded-sm shadow-lg hover:bg-yellow-300 transition-colors">
+                      Send Your Query
+                  </button>
+              </form>
+          </div>
+        </div>
+      </section>
+      
+      <section class="w-11/12 mx-auto my-20">
+        <div class="">
+          <h1 class="sm:text-3xl text-2xl font-bold uppercase text-center mb-10 text-violet-700">
+            Visit Us at Our Office!
+          </h1>
+          <div class="w-full rounded-sm border-2 border-violet-700 shadow-sm shadow-violet-700">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.467515432266!2d90.39315789999999!3d23.7797794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f2750c7a13%3A0x2b1f8e2b824bb3cb!2sCambry!5e1!3m2!1sen!2sbd!4v1761559420185!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="
+            "></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq w-11/12 mx-auto my-20">
+        <div class="">
+          <h1 class="sm:text-3xl text-2xl font-bold uppercase text-center mb-10 text-violet-700">
+            Frequently Asked Questions!
+          </h1>
+          <div id="faq-container-single" class="shadow-sm shadow-violet-300 rounded sm">
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300 shadow-sm shadow-violet-300 rounded sm my-2">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title font-semibold">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow the registration process.
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300 shadow-sm shadow-violet-300 rounded sm my-2">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+              <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300 shadow-sm shadow-violet-300 rounded sm my-2">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title font-semibold">How do I update my profile information?</div>
+              <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+      
+    <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
+      <!-- added from footer.js -->
+    </footer>
+
+    <!-- book an appointment modal -->
+    <section id="appointmentModal" class="hidden fixed inset-0 bg-black/50  items-center justify-center p-4 z-500 opacity-0 transition-opacity duration-300 ease-out">
+      <div id="modalPanel" class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-6  opacity-0 scale-95 transition-all duration-300 ease-out"> 
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-3xl font-bold text-white">
+            Send <span class="text-[#FFD700]">Us</span> A Message
+          </h3>
+          <button id="closeModalBtn" class="text-white hover:text-gray-300 w-8 h-8 font-semibold bg-white/10 hover:bg-white/20 rounded-full p-0 flex items-center justify-center">
+            &times;
+          </button>
+        </div>
+            
+        <form action="https://formspree.io/f/xdkpelzo" method="POST">
+            
+            <div class="mb-4">
+                <input type="text" id="name" name="name" placeholder="Name" 
+                        class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                              focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email" 
+                            class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+                <div>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" 
+                            class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+            </div>
+
+            <div class="mb-4">
+                <input type="text" id="subject" name="subject" placeholder="Subject" 
+                        class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                              focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+            
+            <div class="mb-6">
+                <textarea id="message" name="message" rows="3" placeholder="Your Message" 
+                          class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required></textarea> </div>
+            
+            <div>
+                <button type="submit" 
+                        class="w-full bg-[#FFD700] text-gray-900 text-lg font-semibold px-6 py-3 rounded-sm 
+                                hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-md">
+                    Send Message
+                </button>
+            </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="scroll-to-top-btn">
+      <a href="#top" class="transition-all delay-1000">
+        <div class="bg-violet-700 p-5 w-6 h-6 rounded-full flex items-center justify-center border border-white text-sm font-bold text-white fixed bottom-2 right-2">
+          <i class="fa-solid fa-jet-fighter-up"></i>
+        </div>
+      </a>
+    </section>
+
+    <!-- scripts -->
+    <script src="./scripts/appointment_booking_modal.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/footer.js"></script>
+  </body>
+</html>

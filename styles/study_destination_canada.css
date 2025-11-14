@@ -1,0 +1,151 @@
+.font_1 {
+  font-family: "Heebo", sans-serif;
+}
+.font_2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+.font_3 {
+  font-family: "Calistoga", serif;
+}
+
+.dest_heading {
+  font-size: 48px;
+  font-weight: 400;
+  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.contact_form_heading {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.explore {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.explore_component {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dest_para {
+  font-size: 20px;
+  font-weight: 400;
+}
+.dest_counter_right {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.dream_destination_heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+.dream_destination_textpara {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.message_form_heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.message_footnote {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.message_placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.message_heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.message_text_paragraph {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+}
+.requirement_heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero_counter_para {
+  font-size: 18px;
+  font-weight: 600;
+}
+.uni_view_details {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.requirements_cards {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.process_element {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.financial_cards_heading{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

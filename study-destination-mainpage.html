@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Destination</title>
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/study_destination.css" />
+
+    <style>
+      .footer_img {
+        background-image: url("./assets/footer_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <section
+      class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col overflow-visible object-cover"
+      style="background-image: url('./assets/hero_bg.png')"
+    >
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-violet-700/30 z-[1]"
+      ></div>
+
+      <!-- ====== FIXED NAVBAR ====== -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-[100]"></header>
+
+      <!-- ====== HERO SECTION ====== -->
+      <div
+        class="relative z-[20] flex flex-col items-center justify-center flex-grow px-4 py-5 sm:py-16 text-center  ">
+        <div
+          class="bg-white/10 backdrop-blur-md text-white sm:py-5 rounded-sm shadow-2xl sm:max-w-7/12 mx-auto animate-fadeInUp"
+        >
+          <h1
+            class="text-3xl sm:text-4xl font-black text-[#FFF] mb-4  font_3 drop-shadow-lg uppercase
+            "
+          >
+            Your Dream to Study in
+            <span class="text-[#ffe521]">Explore Top Study Destinations Worldwide !
+          </h1>
+
+          <p
+            class="text-[white] font-bold font_2 text-sm sm:text-base md:text-lg my-10 max-w-xl mx-auto"
+          >
+            Find the best countries to pursue your higher education and build your future.
+          </p>
+
+          <button
+            class="btn bg-[#FACC15] text-violet-700 font-semibold border-none hover:bg-[#EAB308] rounded-sm hover:scale-105 active:scale-95 transition-all duration-300 font_1 shadow-md "
+          >
+            <a id="openContactModalBtn" >Get Started For Free</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Destination Part 1 -->
+      <section
+        class="relative mx-auto bg-gradient-to-r from-indigo-800 to-purple-800 text-white px-4 sm:px-6 md:px-12 lg:px-24 py-10 rounded-sm overflow-hidden mt-20 transition-all duration-700 w-full max-w-6xl"
+      >
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-10 sm:gap-12"
+        >
+          <!-- Left Side - Text Content -->
+          <div
+            class="text-center lg:text-left lg:w-3/4 w-full space-y-6 animate-fade-in-up"
+          >
+            <h1
+              class="dest_counter_right text-center font_1 text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-[#FACC15] transition-transform duration-500 hover:scale-105"
+            >
+              Your Future Starts With the Right Destination
+            </h1>
+
+            <p
+              class="text-gray-200 leading-relaxed dest_para text-center font_2 text-sm sm:text-base md:text-lg transition-opacity duration-500 hover:opacity-90"
+            >
+              From tuition fees to career opportunities, your study destination
+              influences your entire academic journey. We help you compare and
+              select countries that align with your academic interests,
+              financial plans, and lifestyle preferences.
+            </p>
+
+            <button id="openModalBtn"
+              class="btn font_2 mt-6 sm:mt-8 md:mt-10 bg-[#FACC15] text-violet-700 font-semibold px-6 sm:px-8 rounded-sm hover:bg-[#EAB308] hover:scale-105 transition-transform duration-300 shadow-md hover:shadow-xl block mx-auto"
+            >
+              Talk To a Counselor
+            </button>
+          </div>
+
+          <!-- Right Side - Image -->
+          <div
+            class="flex justify-center lg:justify-end lg:w-1/2 w-full relative group"
+          >
+            <img
+              src="./assets/student_girl.png"
+              alt="student_girl"
+              class="w-3/4 sm:w-2/3 md:w-3/5 lg:w-4/5 max-w-xs sm:max-w-sm md:max-w-md drop-shadow-xl transform transition-transform duration-700 group-hover:-translate-y-3 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dream Destination -->
+      <section class="mt-20 px-4">
+        <!-- Section Title -->
+        <div class="text-center mb-10">
+          <h2
+            class="dream_destination_heading font_1 text-2xl sm:text-3xl md:text-[36px] font-bold text-[#4C3C93]"
+          >
+            Six Dream Destinations
+          </h2>
+          <p
+            class="text-gray-600 mt-2 text-sm sm:text-base mx-auto dream_destination_textpara"
+          >
+            Discover Your Perfect Study Destination
+          </p>
+        </div>
+
+        <!-- Destinations Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 sm:mt-16 md:mt-20"
+        >
+          <!-- Australia -->
+          <div
+            class=" shadow-xl rounded-sm hover:scale-105 transition-transform duration-300">
+            <figure>
+              <img
+                src="./assets/Australia_dest.svg"
+                alt="Australia"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+
+          <!-- New Zealand -->
+          <div
+            class="card shadow-xl hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="./assets/Newzeland_dest.svg"
+                alt="New Zealand"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+
+          <!-- United Kingdom -->
+          <div
+            class="card shadow-xl rounded-sm hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="./assets/uk_dest.svg"
+                alt="United Kingdom"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+
+          <!-- Canada -->
+          <div
+            class="card shadow-xl rounded-sm hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="./assets/canada_dest.svg"
+                alt="Canada"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+
+          <!-- Sweden -->
+          <div
+            class="card shadow-xl rounded-sm hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="./assets/sweden_dest.svg"
+                alt="Sweden"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+
+          <!-- Malaysia -->
+          <div
+            class="card shadow-xl rounded-sm hover:scale-105 transition-transform duration-300"
+          >
+            <figure>
+              <img
+                src="./assets/Malaysia_dest.svg"
+                alt="Malaysia"
+                class="w-full h-auto object-cover rounded-sm"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Destinations -->
+      <section class="py-12 bg-base-100 mt-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">
+            Also Explore Other Destinations
+          </h2>
+          <p class="text-base-content/80 max-w-2xl mx-auto mb-10">
+            We also assist students in applying to other popular study
+            destinations around the world. Discover more countries that offer
+            excellent education opportunities and diverse cultural experiences.
+          </p>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center"
+          >
+            <!-- Germany -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/german_flag.png"
+                alt="Germany"
+                class="w-16 h-auto mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Netherlands -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/nl_flag.png"
+                alt="Netherlands"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Ireland -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/au.png"
+                alt="Australia"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- China -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/cn_flag.png"
+                alt="China"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Singapore -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/sg_flag.png"
+                alt="Singapore"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Switzerland -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/ch_flag.png"
+                alt="Switzerland"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- India -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/in_flag.png"
+                alt="India"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Japan -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/jp_flag.png"
+                alt="Japan"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- France -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/fr_flag.png"
+                alt="France"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+
+            <!-- Sweden -->
+            <div
+              class="border border-base-200 rounded-sm p-4 hover:shadow-lg transition"
+            >
+              <img
+                src="./assets/se_flag.png"
+                alt="Sweden"
+                class="w-18 h-12 mx-auto rounded-sm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cambry Details -->
+      <section class="py-12 bg-base-100 mt-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <!-- Section Title -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#4C3C93] mb-2">
+            Cambry Can Help You
+          </h2>
+          <p class="text-base-content/70 italic mb-10">
+            Discover Your Perfect Study Destination
+          </p>
+
+          <!-- Service Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left"
+          >
+            <!-- Card 1 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/book_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      Study Abroad Consultancy
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Expert guidance to find your perfect program and secure
+                      admission.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/pen_paper_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      Application Assistant
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Guidance on preparing and submitting strong applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/versity_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      University Selection
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Expert advice to help you choose the best-fit university
+                      and course.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/scholarship_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      Scholarship Advice
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Explore opportunities to fund your education. Stay up to
+                      date with the scholarship requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/visa_process_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      Visa Processing
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Hassle-free assistance with visa documentation and
+                      application.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="card bg-base-100 shadow-md hover:shadow-lg transition border border-base-200"
+            >
+              <div class="card-body">
+                <div class="flex items-start space-x-4">
+                  <div class="text-[#4C3C93] text-3xl">
+                    <img src="./assets/predeparture_icon.png" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg text-[#4C3C93]">
+                      Pre-Departure Guidance
+                    </h3>
+                    <p class="text-sm text-base-content/70">
+                      Everything you need to prepare for life abroad, including
+                      accommodation, travel, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call To Action Button -->
+          <div class="mt-16">
+            <a
+              href="contact_us.html"
+              class="btn bg-yellow-400 hover:bg-yellow-500 text-black font-semibold border-none rounded-sm px-8"
+            >
+              Get Free Assistant From Cambry
+
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Requirements Section -->
+      <section
+        class="bg-gradient-to-b from-white to-[#F8F7FF] py-16 px-4 shadow-xl"
+      >
+        <div class="container mx-auto max-w-7xl">
+          <!-- Heading -->
+          <div class="text-center mb-12 px-4">
+            <h2 class="text-3xl md:text-4xl text-violet-700 requirement_heading">
+              Requirements to Study Abroad
+            </h2>
+            <p
+              class="text-gray-600 mt-4 max-w-3xl mx-auto text-sm md:text-base leading-relaxed message_text_paragraph"
+            >
+              If you are a student from Bangladesh planning to study in
+              Australia, there are certain requirements you need to fulfil in
+              order to pursue your education in this vibrant country. Here are
+              some key points to consider:
+            </p>
+          </div>
+
+          <!-- Requirements Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <!-- Left Column -->
+            <div class="space-y-6">
+              <!-- Academic Qualification -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-violet-700">
+                    Academic Qualification
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    You must meet the specific academic entry requirements for
+                    your chosen program and provide proof of completing your
+                    secondary education.
+                  </p>
+                </div>
+              </div>
+
+              <!-- English Language Proficiency -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-violet-700">
+                    English Language Proficiency
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    International students must demonstrate English proficiency
+                    through tests like IELTS, TOEFL, or PTE, meeting the minimum
+                    score required by the university.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Financial Capacity -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font-semibold text-violet-700">
+                    Financial Capacity
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    You must show sufficient funds to cover tuition, living
+                    expenses, and other study-related costs during your stay in
+                    Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <!-- Overseas Student Health Cover -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font_1 font-semibold text-violet-700">
+                    Overseas Student Health Cover
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    All international students must purchase OSHC to access
+                    healthcare services while studying in Australia.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Student Visa -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font_1 font-semibold text-violet-700">
+                    Student Visa
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    You need to apply for the Student Visa (Subclass 500) with a
+                    Confirmation of Enrollment (CoE) and meet health, character,
+                    and GTE requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Student Visa Cost -->
+              <div
+                class="card bg-white shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div class="card-body">
+                  <h3 class="text-lg font_1 font-semibold text-violet-700">
+                    Student Visa Cost
+                  </h3>
+                  <p
+                    class="text-gray-600 text-sm md:text-base mt-2 requirements_cards"
+                  >
+                    Bangladeshi applicants must pay the applicable visa
+                    application fee, which varies by course duration and visa
+                    subclass.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Form Section -->
+      <section class="bg-gradient-to-b from-white to-[#F9F8FF] py-16 px-4">
+        <div class="container mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+          <!-- Heading -->
+          <div
+            class="flex justify-center items-center text-center w-full mb-12"
+          >
+            <div class="max-w-2xl">
+              <h2
+                class="text-3xl md:text-4xl font_1 font-bold text-violet-700 leading-tight animate__animated animate__fadeInDown message_heading"
+              >
+                We’ll Help You Decide!
+              </h2>
+              <p
+                class="text-gray-600 mt-4 text-sm md:text-base leading-relaxed animate__animated animate__fadeInUp font_2 message_text_paragraph"
+              >
+                Our experienced counselors can guide you in choosing the
+                destination that best matches your academic background,
+                interests, and future goals. Get personalized recommendations
+                tailored just for you.
+              </p>
+            </div>
+          </div>
+
+          <!-- Form + Image -->
+          <div
+            class="flex flex-col-reverse lg:flex-row mr-12 items-center justify-center gap-12 mx-auto max-w-6xl"
+          >
+            <!-- Left Side (Form) -->
+            <div
+              class="message_placeholder w-full lg:w-1/2 bg-white shadow-lg rounded-sm p-8 md:p-10 transition-transform duration-300 hover:shadow-2xl hover:-translate-y-1"
+            >
+              <form class="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="input input-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input input-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                />
+
+                <div class="flex gap-2">
+                  <div class="w-20">
+                    <input
+                      type="text"
+                      value="+880"
+                      readonly
+                      class="input input-bordered w-full rounded-sm text-center"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Contact Number"
+                    class="input input-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                  />
+                </div>
+
+                <select
+                  class="select select-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                >
+                  <option disabled selected>Preferred Study Destination</option>
+                  <option>Australia</option>
+                  <option>UK</option>
+                  <option>Canada</option>
+                  <option>USA</option>
+                </select>
+
+                <select
+                  class="select select-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                >
+                  <option disabled selected>Preferred Study Level</option>
+                  <option>Bachelor</option>
+                  <option>Master</option>
+                  <option>PhD</option>
+                </select>
+
+                <select
+                  class="select select-bordered w-full rounded-sm focus:border-violet-700 focus:ring-2 focus:ring-violet-700/40 transition-all duration-300"
+                >
+                  <option disabled selected>Preferred Study Year</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                  <option>2027</option>
+                </select>
+
+                <div
+                  class="flex flex-row items-start gap-2 text-xs text-gray-600"
+                >
+                  <input
+                    type="checkbox"
+                    class="checkbox checkbox-xs checkbox-primary mt-1"
+                  />
+                  <p class="message_footnote mt-1">
+                    By clicking you agree to our
+                    <a href="#" class="text-[#FACC15] hover:underline"
+                      >Privacy Policy</a
+                    >
+                    and
+                    <a href="#" class="text-violet-700 hover:underline"
+                      >Terms & Conditions</a
+                    >
+                    <span class="text-pink-500">*</span>
+                  </p>
+                </div>
+
+                <div class="text-center lg:text-left pt-4">
+                  <button
+                    class="btn bg-violet-700 text-white hover:bg-[#5B4FB3] hover:scale-105 transition-transform duration-300 rounded-sm px-10 py-2"
+                  >
+                    Get Started For Free
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right Side (Image) -->
+            <div
+              class="w-full lg:w-1/2 flex justify-center animate__animated animate__fadeInRight"
+            >
+              <img
+                src="./assets/globe.png"
+                alt="Graduation Globe"
+                class="w-3/4 sm:w-2/3 md:w-3/4 lg:w-[85%] max-w-lg object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- We collaborate with -->
+      <section
+        id="newsletter"
+        class="mb-20 px-4 sm:px-6 lg:px-8 mt-20 w-full max-w-6xl mx-auto"
+      >
+        <div
+          class="bg-gradient-to-r from-indigo-800 to-purple-800 rounded-sm p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-16 max-w-6xl mx-auto"
+        >
+          <!-- Text Content -->
+          <div
+            class="text-white space-y-4 max-w-full sm:max-w-md md:max-w-lg text-center md:text-left"
+          >
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300 leading-snug"
+            >
+              Your Study Abroad<br />Dream Awaits!
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg opacity-90 text_group">
+              Let us guide you to your ideal university and make your journey
+              stress-free. Contact us today for a free consultation.
+            </p>
+            <button
+              class="btn text-blue-700 bg-white px-5 py-2 sm:py-3 text-sm sm:text-base md:text-base transition-transform duration-200 transform hover:scale-105 hover:bg-blue-700 hover:text-white rounded-sm shadow-md border-none"
+            >
+              <a href="contact_us.html">Book a Free Consultation 📅</a>
+            </button>
+          </div>
+
+          <!-- Image Section -->
+          <div
+            class="flex-shrink-0 w-full max-w-[220px] sm:max-w-xs md:max-w-sm mt-6 md:mt-0"
+          >
+            <img
+              src="./assets/students-group.png"
+              alt="studying_abroad"
+              class="rounded-sm shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
+     <!-- added from footer.js -->
+    </footer>
+
+    <div id="appointmentModal" 
+         class="hidden fixed inset-0 bg-black/50  items-center justify-center p-4 z-500 opacity-0 transition-opacity duration-300 ease-out">
+      <div id="modalPanel" class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-6  opacity-0 scale-95 transition-all duration-300 ease-out"> <div class="flex justify-between items-center mb-6">
+        <h3 class="text-3xl font-bold text-white">Send <span class="text-[#FFD700]">Us</span> A Message</h3>
+        <button id="closeModalBtn" class="text-white hover:text-gray-300 text-2xl font-semibold bg-white/10 hover:bg-white/20 rounded-sm w-8 h-8 flex items-center justify-center">
+                    &times;
+                </button>
+            </div>
+            
+            <form action="https://formspree.io/f/xdkpelzo" method="POST">
+                
+                <div class="mb-4">
+                    <input type="text" id="name" name="name" placeholder="Name" 
+                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email" 
+                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" 
+                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+                </div>
+
+                <div class="mb-4">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" 
+                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
+                
+                <div class="mb-6">
+                    <textarea id="message" name="message" rows="3" placeholder="Your Message" 
+                              class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
+                                     focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required></textarea> </div>
+                
+                <div>
+                    <button type="submit" 
+                            class="w-full bg-[#FFD700] text-gray-900 text-lg font-semibold px-6 py-3 rounded-sm 
+                                   hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-md">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- started modals -->
+    <div id="contactModal" 
+         class="hidden fixed inset-0 bg-black/60  items-center justify-center p-4 z-500 
+                opacity-0 transition-opacity duration-300 ease-out">
+        
+        <div id="contactModalPanel"
+             class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-5 
+                    opacity-0 scale-95 transition-all duration-300 ease-out relative">
+            
+            <button id="closeContactModalBtn" 
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-semibold">&times;</button>
+            
+            <h3 class="text-3xl font-bold text-center mb-5 text-yellow-400">Send Us A Message</h3>
+
+            <form action="https://formspree.io/f/xdkpelzo" method="POST">
+                
+                <div class="mb-2">
+                    <input type="text" id="contactName" name="name" placeholder="Name" 
+                           class="w-full px-5 py-2 border border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 bg-white/80 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                </div>
+                
+                <div class="mb-2">
+                    <input type="email" id="contactEmail" name="email" placeholder="Email" 
+                           class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
+                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                </div>
+
+                <div class="grid grid-cols-4 gap-3 mb-2">
+                    <div class="col-span-1">
+                        <input type="text" value="+880" readonly 
+                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm bg-gray-100 text-gray-700 focus:outline-none">
+                    </div>
+                    <div class="col-span-3">
+                        <input type="tel" id="contactPhone" name="phone" placeholder="Contact Number" 
+                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
+                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <select id="contactDestination" name="destination" 
+                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
+                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                        <option value="" disabled selected>Preferred Study Destination</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <select id="contactLevel" name="level" 
+                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
+                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                        <option value="" disabled selected>Preferred Study Level</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="postgraduate">Postgraduate</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="foundation">Foundation</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <select id="contactYear" name="year" 
+                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
+                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
+                        <option value="" disabled selected>Preferred Study Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="later">Later</option>
+                    </select>
+                </div>
+                
+                <div class="mb-5 flex items-start">
+                    <input type="checkbox" id="contactAgreement" name="agreement" class="mt-1 mr-3 h-5 w-5 text-violet-600 rounded focus:ring-violet-500 border-gray-300" required>
+                    <label for="contactAgreement" class="text-white text-sm">
+                        By clicking you agree to our 
+                        <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a> and 
+                        <a href="#" class="text-orange-500 hover:underline">Terms & Conditions</a> *
+                    </label>
+                </div>
+                
+                <div>
+                    <button type="submit" 
+                            class="w-full bg-yellow-400 text-white text-lg font-semibold px-6 py-3 rounded-sm 
+                                   hover:bg-yellow-600 transition-all duration-300 shadow-md">
+                        Get Started For Free
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="scripts/started_modals.js"></script>
+    <script src="./scripts/study_destination_homepage.js"></script>
+    <script src="scripts/appointment_booking_modal.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+</html>

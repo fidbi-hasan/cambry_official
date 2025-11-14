@@ -1,0 +1,33 @@
+/* Custom CSS for the infinite scroll animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); } /* Scrolls the entire width of the duplicated content */
+        }
+
+        .animate-scroll {
+            animation: scroll 30s linear infinite; /* Adjust duration to control speed */
+        }
+
+        /* To handle potential overlapping issues if using complex transforms */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap; /* Ensures images stay in a single line */
+        }
+        .marquee-content {
+            display: flex; /* Makes sure images align side-by-side */
+            width: fit-content; /* Allows content to extend beyond container */
+        }
+
+        /* Specific styles for the logo images */
+        .logo-item {
+            flex-shrink: 0; /* Prevents logos from shrinking */
+            width: 150px; /* Adjust as needed */
+            height: 80px; /* Adjust as needed */
+            object-fit: contain; /* Ensures logo fits within its box */
+            margin: 0 2rem; /* Spacing between logos */
+        }
+        
+        /* For the title text color */
+        .text-deep-purple {
+            color: #4A00B3; /* A deep purple, adjust if needed */
+        }
